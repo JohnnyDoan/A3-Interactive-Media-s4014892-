@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROXCITY</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <script defer src="script1.js"></script>
+        <script defer src="script2.js"></script>
+        <script defer src="script3.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <audio id="music1" autoplay loop>
+            <source src="music1.ogg" type="audio/ogg">
+        </audio>
+        
+        <audio id="music2" loop>
+            <source src="music2.ogg" type="audio/ogg">
+        </audio>
+
+        <div class="left-bar"></div>
+        <div class="right-bar"></div>
+
+        <div id="overlay"></div>
+        <div id="dialog">
+            <p>Do you want to continue scrolling?</p>
+            <button id="continue">Continue</button>
+            <button id="stop">Stop</button>
+        </div>
+
+        <div>
+            <div id="container" class="scroll-container">
+                <div class="content">
+                    <video muted preload>
+                        <!-- <source src='Video5.mp4' type="video/mp4"> -->
+                        <!-- I Had to use an embeded link for the video because the video file is too big to upload to Github -->
+                        <source src='https://cdn.glitch.me/1268c289-7480-4fdf-af6c-3629ba105a9c/Video5.mp4?v=1727150000149' type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div id="click-overlay"></div>
+        <div id="click-dialog">
+            <p>There's no going back, you were warned!</p>
+            <button id="close-click-dialog">It can't get any worse can't it?</button>
+        </div>
+    </body>
+</html>
